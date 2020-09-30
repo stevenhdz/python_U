@@ -26,7 +26,7 @@ def persona1():
               "MATEO", "JOSE FRANCISCO", "JUAN LUIS", "XAVIER", "ALBERT"]
 
     """ apellidos = [] """
-
+    #TODO: telefono iden como string 
     identificacion = [random.randint(1, 100000)]
     telefono = [random.randint(300000000, 359999999)]
     estatura = [round(random.uniform(1.30, 2.00), 2)]

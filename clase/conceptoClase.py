@@ -4,7 +4,7 @@ def suma(a,b):
   
 
 class Persona:
-    #metodo o funcion constructor: inicializa las variables o atributos globales a la clase
+    #TODO: CONSTRUCTOR
     def __init__(self, nombre, identificacion, telefono, edad, peso, sexo, estatura):
         self.nombre = nombre
         self.identificacion = identificacion
@@ -15,7 +15,7 @@ class Persona:
         self.estatura = estatura
         
     def imc(self):
-      return self.peso/(self.estatura**2) 
+      return round(self.peso/(self.estatura**2),2)
 
     def __eq__(self, persona):
       if self.edad == persona.edad and self.peso == persona.peso and self.estatura == persona.estatura:
@@ -23,7 +23,6 @@ class Persona:
       return False
 
     def __str__(self):
-      h = self.peso/self.estatura**2
       texto = f"""
       Clase Persona
         Nombre: {self.nombre}  
@@ -33,7 +32,7 @@ class Persona:
         Sexo: {self.sexo}
         Peso: {self.peso}
         Estatura: {self.estatura}
-        IMC: {round(h, 2)}
+        IMC: {self.imc()}
       """
       return texto
 
