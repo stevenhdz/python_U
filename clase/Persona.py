@@ -25,14 +25,17 @@ def persona1():
               "JOSE ANGEL", "FELIPE", "JOSE IGNACIO", "VICTOR MANUEL", "RODRIGO", "LUIS MIGUEL",
               "MATEO", "JOSE FRANCISCO", "JUAN LUIS", "XAVIER", "ALBERT"]
 
-    """ apellidos =  """
+    """ apellidos = [] """
 
     identificacion = [random.randint(1, 100000)]
     telefono = [random.randint(300000000, 359999999)]
-    estatura = [round(random.uniform(1.30, 1.98), 2)]
+    estatura = [round(random.uniform(1.30, 2.00), 2)]
     edad = [random.randint(18, 90)]
-    peso = [round(random.uniform(2.5, 100.0), 1)]
+    peso = [round(random.uniform(45.0, 100.0), 1)]
     sexo = ["M", "F"]
+
+    """ for x in sexo:
+        print(x) """
 
 
     nombre = random.choice(nombre)

@@ -33,7 +33,7 @@ class Persona:
         Sexo: {self.sexo}
         Peso: {self.peso}
         Estatura: {self.estatura}
-        IMC: {h}
+        IMC: {round(h, 2)}
       """
       return texto
 
