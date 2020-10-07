@@ -1,7 +1,6 @@
 from conceptoClase import *
 import random
 
-
 def persona1():
 
     nombres_mujeres = ["MARIA CARMEN", "MARIA",   "CARMEN",  "ANA MARIA",   "JOSEFA",  "ISABEL",
@@ -26,9 +25,9 @@ def persona1():
               "MATEO", "JOSE FRANCISCO", "JUAN LUIS", "XAVIER", "ALBERT"]
 
     """ apellidos = [] """
-    #TODO: telefono iden como string 
-    identificacion = [random.randint(1, 100000)]
-    telefono = [random.randint(300000000, 359999999)]
+
+    identificacion = [str(random.randint(1, 100000))]
+    telefono = [str(random.randint(300000000, 359999999))]
     estatura = [round(random.uniform(1.30, 2.00), 2)]
     edad = [random.randint(18, 90)]
     peso = [round(random.uniform(45.0, 100.0), 1)]
@@ -36,7 +35,6 @@ def persona1():
 
     """ for x in sexo:
         print(x) """
-
 
     nombre = random.choice(nombre)
     nombres_mujeres = random.choice(nombres_mujeres)
@@ -47,10 +45,8 @@ def persona1():
     peso = random.choice(peso)
     sexo = random.choice(sexo)
 
-    pers1 = Persona(nombre, identificacion, telefono,
-                    edad, peso, sexo, estatura)
+    pers1 = Persona(nombre, identificacion, telefono,edad, peso, sexo, estatura)
     return pers1
 
-    pers2 = Persona(nombre, identificacion, telefono,
-                    edad, peso, sexo, estatura)
+    pers2 = Persona(nombre, identificacion, telefono,edad, peso, sexo, estatura)
     return pers2
